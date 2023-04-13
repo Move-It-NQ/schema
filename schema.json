@@ -1,0 +1,150 @@
+
+"communityUser": {
+  "ID": {
+    "country": "Australia",
+    "culturalIdentity": false,
+    "email": "anghenry75@bigpond.com",
+    "firstname": "Angela ",
+    "gender": "Female",
+    "lga": "Townsville City Council",
+    "postcode": "4822",
+    "registrationDate": "Sat Nov 26 2022 05:40:07 GMT+1000 (Australian Eastern Standard Time)",
+    "lastLogin": "Sat Nov 26 2022 05:40:07 GMT+1000 (Australian Eastern Standard Time)",
+    "state": "QLD",
+    "surname": "Henry",
+    "UID": "UID",
+    "dob": "DDMMYYY",
+
+    "surveys": [
+      {"date": "DDMMYYYY", "currentActivity": "5-7 times a week", "currentBarrier": "None", "healthRating": 7}
+    ],
+
+    COUNTER = sum of completedPrograms
+    "counter": 0, 
+
+    If wexerStatus = true, user can view WEXER exercise videos through SDK
+    "wexerStatus": false, 
+
+    INSTRUCTOR SCHEMA
+    "instructorStatus": false, 
+    "loggedPrograms": [
+      {"id": "programID"},
+    ],
+
+    COMMUNITY USER DATA
+    --- Programs completed, this is confirmed by instructor after program is logged. 
+    "completedPrograms": [
+      {"date": "DDMMYYYY", "program": "Program Name", "instructor": "Instructor Name"},
+      {"date": "DDMMYYYY", "program": "Program Name", "instructor": "Instructor Name"}
+    ],
+
+    --- Programs booked, up to 2 weeks in advanced
+    "bookedPrograms": [
+      {"id": "programID"},
+    ],
+    "pushNotifications": true,
+
+    COMMUNITY USER HEALTH SCREENING - MUST BE COMPELTED (status = true) to book programs.
+    "healthScreening": [
+      { "dateLogged": "DDMMYYYY",
+        "status": true,
+        [ 
+          { 
+            "question": "Have you ever been told that you have a heart condition?", 
+            "required": true,
+            "answer": false
+          },
+          { 
+            "question": "Have you ever had a stroke?", 
+            "required": true,
+            "answer": false
+          },
+          { 
+            "question": "Do you ever have unexplained pains in your chest at rest or during physical exercise?", 
+            "required": true,
+            "answer": false
+          },
+          { 
+            "question": "Do you consistently feel faint or suffer from spells of dizziness?", 
+            "required": true,
+            "answer": false
+          },
+          { 
+            "question": "Do you suffer from asthma and require medication?", 
+            "answer": false
+          },
+          { 
+            "question": "Do you suffer from type I or II diabetes?", 
+            "answer": false,
+            "required": true,
+          },
+          { 
+            "question": "Do you have any diagnosed muscle, bone, tendon, ligament or joint problems that may limit you or you have been told could be made worse by participating in exercise?", 
+            "answer": false,
+            "required": true,
+            "notes": "Details of injury"
+          },
+          { 
+            "question": "Do you suffer from any medical conditions that may be made worse by participating in physical activity?", 
+            "required": true,
+            "answer": false
+          },
+          { 
+            "question": "Do you suffer from high blood pressure over 140/90 or low blood pressure below 100/80?", 
+            "required": true,
+            "answer": false
+          },
+          { 
+            "question": "Have you been told that you have high cholesterol/blood lipids??", 
+            "required": true,
+            "answer": false
+          },
+          { 
+            "question": "Are you pregnant or have you given birth within the last 12 months?", 
+            "required": true,
+            "answer": false
+          },
+          { 
+            "question": "Do you smoke cigarettes on a daily or weekly basis?", 
+            "required": false,
+            "answer": false,
+            "number":
+          },
+          { 
+            "question": "Do you have a family history of heart disease? (stroke, heart attack)", 
+            "required": false,
+            "answer": false
+          },
+          { 
+            "question": "Have you been told that you have high blood sugar? (glucose)?", 
+            "required": false,
+            "answer": false
+          },
+          { 
+            "question": "Are you currently taking prescribed medication(s) for any condition(s)? These are additional to those already provided. If yes, what are the medical conditions?", 
+            "required": false,
+            "answer": false
+          },
+          { 
+            "question": "Have you spent time in hospital for any medical condition/illness/injury during the last 12 months?", 
+            "required": false,
+            "answer": false,
+            "notes": "Details"
+          },
+          { 
+            "question": "What are your top 5 health and fitness goals for the next 12 months?", 
+            "required": false,
+            "notes": "Details"
+          },
+        ]
+
+    ],
+
+    WELLNESS = daily slider check in through Phone App. 
+    "wellness": [
+      {"date": "DDMMYYYY", "mood": 5, "sleep": 5, "stress": 5, "anxiety": 5, "food": 5, "exercise": 5, "score": 5},
+      {"date": "DDMMYYYY", "mood": 5, "sleep": 5, "stress": 5, "anxiety": 5, "food": 5, "exercise": 5, "score": 5},
+    ],
+
+    FAVOURITES = list of Favourite articles / recipes by ID
+    "favouriteArticles": [{"id": "articleID"}, {"id": "articleID2"}, ]
