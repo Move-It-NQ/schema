@@ -1,6 +1,6 @@
 
 "communityUser": {
-  "ID": {
+  "UID": {
     "country": "Australia",
     "culturalIdentity": false,
     "email": "anghenry75@bigpond.com",
@@ -15,8 +15,28 @@
     "UID": "UID",
     "dob": "DDMMYYY",
 
+    If true, user signed up through the onDemand portal. If false, User signed up through Phone App
+    "onDemandSignUp": true, 
     "surveys": [
-      {"date": "DDMMYYYY", "currentActivity": "5-7 times a week", "currentBarrier": "None", "healthRating": 7}
+      "date": "DDMMYYYY", 
+      "answers": [
+                { 
+                    "question": "Since attending MINQ programs how much has your health improved?", 
+                    "answer": 5
+                },
+                { 
+                    "question": "Since participating in Move It NQ sessions how much more physical activity am I completing?", 
+                    "answer": 5
+                },
+                { 
+                    "question": "Do you feel more connected to your community after attending Move It NQ programs?", 
+                    "answer": 5
+                },
+                { 
+                    "question": "How would you rate Move It NQ sessions?", 
+                    "answer": 5
+                },
+                ]
     ],
 
     COUNTER = sum of completedPrograms
@@ -77,12 +97,13 @@
             "question": "Do you suffer from type I or II diabetes?", 
             "answer": false,
             "required": true,
+            "notes": "Enter Type 1 or Type 2" IF TRUE COLLECT NOTES INFORMATION
           },
           { 
             "question": "Do you have any diagnosed muscle, bone, tendon, ligament or joint problems that may limit you or you have been told could be made worse by participating in exercise?", 
             "answer": false,
             "required": true,
-            "notes": "Details of injury"
+            "notes": "Details of injury" IF TRUE COLLECT NOTES INFORMATION
           },
           { 
             "question": "Do you suffer from any medical conditions that may be made worse by participating in physical activity?", 
@@ -92,18 +113,15 @@
           { 
             "question": "Do you suffer from high blood pressure over 140/90 or low blood pressure below 100/80?", 
             "required": true,
-            "answer": false
+            "answer": false,
+            "notes": "High or Low Blood Pressure" IF TRUE COLLECT NOTES INFORMATION
           },
           { 
             "question": "Have you been told that you have high cholesterol/blood lipids??", 
             "required": true,
             "answer": false
           },
-          { 
-            "question": "Are you pregnant or have you given birth within the last 12 months?", 
-            "required": true,
-            "answer": false
-          },
+          NOT REQUIRED OPTIONAL QUESTIONS
           { 
             "question": "Do you smoke cigarettes on a daily or weekly basis?", 
             "required": false,
@@ -129,12 +147,17 @@
             "question": "Have you spent time in hospital for any medical condition/illness/injury during the last 12 months?", 
             "required": false,
             "answer": false,
+            "notes": "Details" IF TRUE COLLECT NOTES INFORMATION
+          },
+          { 
+            "question": "What are your top 3 health and fitness goals for the next 12 months?", 
+            "required": false,
             "notes": "Details"
           },
           { 
-            "question": "What are your top 5 health and fitness goals for the next 12 months?", 
+            "question": "Are you pregnant or have you given birth within the last 12 months?", 
             "required": false,
-            "notes": "Details"
+            "answer": false
           },
         ]
 
