@@ -20,6 +20,27 @@
 
     If true, user signed up through the onDemand portal. If false, User signed up through Phone App
     "onDemandSignUp": true, 
+    "surveys": [
+      "date": "DDMMYYYY", 
+      "answers": [
+                { 
+                    "question": "Since attending MINQ programs how much has your health improved?", 
+                    "answer": 5
+                },
+                { 
+                    "question": "Since participating in Move It NQ sessions how much more physical activity am I completing?", 
+                    "answer": 5
+                },
+                { 
+                    "question": "Do you feel more connected to your community after attending Move It NQ programs?", 
+                    "answer": 5
+                },
+                { 
+                    "question": "How would you rate Move It NQ sessions?", 
+                    "answer": 5
+                },
+                ]
+    ],
 
     COUNTER = sum of completedPrograms
     "counter": 0, 
@@ -103,7 +124,6 @@
             "required": true,
             "answer": false
           },
-
           NOT REQUIRED OPTIONAL QUESTIONS
           { 
             "question": "Do you smoke cigarettes on a daily or weekly basis?", 
