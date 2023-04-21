@@ -1,0 +1,131 @@
+"onboardingQuestions": {
+    "q1": {
+        "question": "What is your main motivation to keep physically active?", 
+        "answers": [ "Improve physical health or fitness", "Fun/enjoyment", "Psychological/mental Health/therapy", "To be outdoors/enjoy nature", "Social reasons", "Performance/competition", "Other (please specify)"]
+         },
+    "q2": {
+        "question": "What is your main barrier to keeping physically active?", 
+        "answers": [ "Not enough time", "Too many other commitments", "Financial", "Don’t like sport/physical activity", "Limited access to programs", "Weather", "Physical job", "Poor health or Injury", "Other ( please specify)"
+        ]
+             },
+    "q3": {
+        "question": "Current level of physical activity / structured activity per week?", 
+        "answers": [ "Never", "Occasionally but not regularly", "1-2 times a week", "3-4 times a week", "5-7 times a week"]
+        }
+},
+
+"surveyQuestions": {
+    "q1": {
+        "question": "I feel my health has improved.", 
+        "answer": false
+        },
+    "q2": {
+        "question": "I have completed more physical activity", 
+        "answer": false
+        },
+    "q3": {
+        "question": "I feel more connected to my local community", 
+        "answer": false
+        },
+    "q4": {
+        "question": "I would recommend MINQ Programs to a friend or family member if suitable", 
+        "answer": false
+        },
+    "q5": {
+        "question": "Any general feedback?", 
+        "answer": "Feel free to share any general feedback here."
+        }
+}
+
+"healthScreening": {
+        { 
+          "question": "Have you ever been told that you have a heart condition?", 
+          "required": true,
+          "answer": false
+        },
+        { 
+          "question": "Have you ever had a stroke?", 
+          "required": true,
+          "answer": false
+        },
+        { 
+          "question": "Do you ever have unexplained pains in your chest at rest or during physical exercise?", 
+          "required": true,
+          "answer": false
+        },
+        { 
+          "question": "Do you consistently feel faint or suffer from spells of dizziness?", 
+          "required": true,
+          "answer": false
+        },
+        { 
+          "question": "Do you suffer from asthma and require medication?", 
+          "answer": false
+        },
+        { 
+          "question": "Do you suffer from type I or II diabetes?", 
+          "answer": false,
+          "required": true,
+          "notes": "Enter Type 1 or Type 2"
+        },
+        { 
+          "question": "Do you have any diagnosed muscle, bone, tendon, ligament or joint problems that may limit you or you have been told could be made worse by participating in exercise?", 
+          "answer": false,
+          "required": true,
+          "notes": "Details of injury"
+        },
+        { 
+          "question": "Do you suffer from any medical conditions that may be made worse by participating in physical activity?", 
+          "required": true,
+          "answer": false
+        },
+        { 
+          "question": "Do you suffer from high blood pressure over 140/90 or low blood pressure below 100/80?", 
+          "required": true,
+          "answer": false,
+          "notes": "High or Low Blood Pressure"
+        },
+        { 
+          "question": "Have you been told that you have high cholesterol/blood lipids??", 
+          "required": true,
+          "answer": false
+        },
+        { 
+          "question": "Do you smoke cigarettes on a daily or weekly basis?", 
+          "required": false,
+          "answer": false,
+          "number":
+        },
+        { 
+          "question": "Do you have a family history of heart disease? (stroke, heart attack)", 
+          "required": false,
+          "answer": false
+        },
+        { 
+          "question": "Have you been told that you have high blood sugar? (glucose)?", 
+          "required": false,
+          "answer": false
+        },
+        { 
+          "question": "Are you currently taking prescribed medication(s) for any condition(s)? These are additional to those already provided. If yes, what are the medical conditions?", 
+          "required": false,
+          "answer": false
+        },
+        { 
+          "question": "Have you spent time in hospital for any medical condition/illness/injury during the last 12 months?", 
+          "required": false,
+          "answer": false,
+          "notes": "Details"
+        },
+        { 
+          "question": "What are your top 3 health and fitness goals for the next 12 months?", 
+          "required": false,
+          "notes": "Details"
+        },
+        { 
+          "question": "Are you pregnant or have you given birth within the last 12 months?", 
+          "required": false,
+          "answer": false
+        },
+
+    },

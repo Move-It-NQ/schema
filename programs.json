@@ -1,0 +1,37 @@
+"programs": {
+    "id": {
+        "name": "Program Name",
+        "instructor": "UID",
+        "lga": "Townsville City Council",
+        "description": "This is a description of the program",
+        "image": "imageURL",
+        "dateAdded": "Timestamp",
+        "location": "Program address",
+        "events": 
+            "eventID": {
+                "date": "Timestamp", 
+                "instructor": "instructorUID", 
+                "location": "Where the program is held",
+                "registeredAttendees": ["UserID_1", "UserID_2"]
+
+            }
+    },
+    
+    "id2": {
+        "name": "Program Name 2",
+        "instructor": "UID",
+        "lga": "Townsville City Council",
+        "description": "This is a description of the program",
+        "image": "imageURL",
+        "dateAdded": "Timestamp",
+        "location": "Program Address",
+        "events": 
+            "eventID": {
+                "date": "Timestamp", 
+                "instructor": "instructorUID", 
+                "location": "Where the program is held",
+                "registeredAttendees": ["UserID_1", "UserID_2"]
+
+            }
+    },
+}
